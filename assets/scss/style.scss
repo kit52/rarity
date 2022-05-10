@@ -1,0 +1,55 @@
+@import "modules/fonts";
+@import "modules/variables";
+@import "modules/header";
+@import "modules/components";
+@import "modules/sections";
+@import "./modules/footer";
+@import "./modules/accordion.min.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1220px;
+}
+
+* {
+    font-family: "Gilroy", sans-serif;
+    color: var(--grey-1);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1210px;
+
+}
+
+.section {
+    margin-bottom: 40px;
+    display: block;
+
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+    }
+
+    .heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+
+        span {
+            color: var(--main-blue);
+        }
+
+        margin-bottom: 24px;
+    }
+}

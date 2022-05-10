@@ -1,0 +1,76 @@
+.video {
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    @media (min-width: 768px) {
+        max-width: 730px;
+    }
+
+    &:hover {
+        path.line {
+            stroke: var(--blue);
+        }
+        path.triangle {
+            fill: var(--blue);
+        }
+    }
+    &.active {
+        img {
+            display: none;
+        }
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        padding-top: 56.25%;
+        border-radius: 8px;
+    }
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-radius: 8px;
+        bottom: 0;
+        top: 0;
+        content: "";
+    }
+    svg {
+        width: 40px;
+        @media (min-width: 992px) {
+            width: 48px;
+        }
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 2;
+
+        path.line {
+            transition: all 0.3s ease;
+            stroke: #fff;
+        }
+        path.triangle {
+            transition: all 0.3s ease;
+            fill: #fff;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+}

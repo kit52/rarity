@@ -1,0 +1,97 @@
+.road-map-section {
+    .road {
+        background: #fcfcfc;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        .title {
+            width: 100%;
+            max-width: 155px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-left: 40px;
+            padding-right: 36px;
+            justify-content: center;
+            border-right: 1px solid rgba(224, 224, 224, 0.5);
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            .title_big {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 66px;
+            }
+            .year {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 37px;
+            }
+        }
+        .block {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .road-one {
+        background: linear-gradient(267.01deg, #b61944 21.64%, #40b3e5 78.88%);
+
+        * {
+            color: #fff;
+        }
+
+        .block-one,
+        .block-two,
+        .block-three {
+            max-width: 240px;
+            border-right: 1px solid rgba(224, 224, 224, 0.5);
+        }
+        .block-four {
+            padding-left: 56px;
+            padding-right: 56px;
+            max-width: 300px;
+        }
+    }
+    .road-two,
+    .road-five,
+    .road-seven {
+        .block-one {
+            border-right: 1px solid rgba(224, 224, 224, 0.5);
+            max-width: 480px;
+        }
+    }
+    .road-five,
+    .road-seven {
+        .block-one {
+            span {
+                max-width: 240px;
+            }
+        }
+        .block-two {
+            span {
+                max-width: 300px;
+            }
+        }
+    }
+    .road-six {
+        span {
+            max-width: 550px;
+        }
+    }
+}

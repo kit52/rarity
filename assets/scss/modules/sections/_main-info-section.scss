@@ -1,0 +1,33 @@
+.main-info-section {
+    .container {
+        background: rgba(242, 242, 242, 0.5);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        max-width: 172px;
+        padding: 16px;
+        height: fit-content;
+    }
+    .middle {
+        display: flex;
+        margin-left: 60px;
+        align-items: center;
+        margin-right: 70px;
+    }
+    .text {
+        width: 300px;
+        margin-right: 54px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .right,
+    .left {
+        margin-top: -41px;
+        margin-bottom: -41px;
+    }
+}

@@ -1,0 +1,138 @@
+.header {
+  background: rgba(242, 242, 242, 0.5);
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #E0E0E0;
+  }
+
+  .middle {
+
+    border-right: 1px solid #E0E0E0;
+    padding-left: 32px;
+
+    display: flex;
+    align-items: center;
+
+    .input-wrapper {
+
+      position: relative;
+      margin-right: 24px;
+
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        right: 14px;
+        position: absolute;
+        background: url('../../assets/img/search.svg');
+      }
+
+
+      input {
+        background: #FFFFFF;
+        border: 1px solid var(--grey-4);
+        border-radius: 40px;
+        padding-left: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: none;
+        position: relative;
+        transition: all 0.3s ease;
+        width: 364px;
+
+        display: inline-block;
+
+        padding-right: 40px;
+        position: relative;
+
+
+
+        &:active,
+        &:hover,
+        &:focus {
+
+          background:
+            linear-gradient(white, white) padding-box,
+            linear-gradient(267.01deg, #B61944 21.64%, #40B3E5 78.88%) border-box;
+          border-radius: 50em;
+          border: 1px solid transparent;
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+
+
+    div,
+    a {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      margin-right: 31px;
+    }
+
+    svg {
+      margin-left: 13px;
+
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    padding-right: 26px;
+    padding-left: 26px;
+    border-right: 1px solid #E0E0E0;
+
+    .icon1 {
+      stroke: #4F4F4F;
+      transition: all 0.3s easy;
+
+      &:hover {
+        stroke: var(--main-blue);
+      }
+    }
+
+    .icon2 {
+      fill: #4F4F4F;
+      transition: all 0.3s easy;
+
+      &:hover {
+        fill: var(--main-blue);
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+
+
+      &:first-child {
+        margin-right: 26px;
+      }
+    }
+  }
+
+  .account {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+
+    img {
+      margin-right: 12px;
+    }
+  }
+}

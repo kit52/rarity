@@ -1,0 +1,51 @@
+.news-section {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        max-width: 580px;
+        min-height: 300px;
+
+        border-radius: 10px;
+
+        img {
+            height: 100%;
+            width: 50%;
+        }
+
+        .wrapper {
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 24px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid #e0e0e0;
+
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 16px;
+            }
+
+            .text {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #aaaaaa;
+                margin-bottom: 26px;
+            }
+
+            .btn {
+
+                max-width: 94px;
+            }
+        }
+    }
+}

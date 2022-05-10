@@ -1,0 +1,157 @@
+.top-salers-section {
+    .top {
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+
+            span {
+                color: var(--main-blue);
+            }
+        }
+
+        margin-bottom: 24px;
+    }
+
+    .content {
+        columns: 4;
+
+        gap: 20px;
+
+        .card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .number {
+                line-height: 14px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                min-width: 28px;
+                min-height: 28px;
+                color: var(--grey-1);
+                border: 1px solid var(--grey-5);
+                border-radius: 20px;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 12px;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .name {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 5px;
+            }
+
+            .money {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: var(--grey-2);
+                margin-right: 10px;
+            }
+
+            .green {
+                color: #21b14d;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            .red {
+                color: var(--main-pink);
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+
+
+}
+
+.drop {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+
+    .menu {
+        display: none;
+        position: absolute;
+    }
+
+    &.active {
+        .menu {
+            display: block;
+            left: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            min-width: 180px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            .item {
+                padding-bottom: 16px;
+                padding-top: 16px;
+                height: fit-content;
+
+                &.selected {
+
+                    position: relative;
+
+                    span {
+                        color: var(--main-blue);
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 12px;
+                        top: calc(50% - 5px);
+                        width: 10px;
+                        height: 10px;
+                        background: url('../img/ok.svg');
+                    }
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #ECECEC;
+
+                }
+
+                span {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+
+                    color: #07210F;
+                    padding-left: 8px;
+
+
+
+                }
+            }
+        }
+    }
+}
