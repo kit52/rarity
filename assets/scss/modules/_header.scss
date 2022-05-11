@@ -1,14 +1,17 @@
 .header {
   background: rgba(242, 242, 242, 0.5);
   width: 100%;
+  border-bottom: 1px solid #E0E0E0;
 
   .container {
     display: flex;
     justify-content: space-between;
+
   }
 
   .logo {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-right: 24px;
@@ -82,6 +85,8 @@
       font-size: 13px;
       line-height: 16px;
       margin-right: 31px;
+      display: flex;
+      align-items: center;
     }
 
     svg {
@@ -116,12 +121,11 @@
     }
 
     svg {
-      width: 18px;
-      height: 18px;
+
 
 
       &:first-child {
-        margin-right: 26px;
+        margin-right: 20px;
       }
     }
   }

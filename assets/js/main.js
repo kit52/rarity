@@ -53,6 +53,7 @@ function timer(id, add) {
 
             if (t.total <= 0) {
                 clearInterval(timeInterval);
+                startTimer()
             }
         }
     }
@@ -63,6 +64,14 @@ function timer(id, add) {
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
+}
+function startTimer() {
+    const timers = document.querySelectorAll('.timer');
+    timers.forEach((t, i) => {
+        const id = t.getAttribute('id');
+
+        timer(`#${id}`, getRandomArbitrary(i + 1, 24), i * 3)
+    })
 }
 document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.main-slider-top-section')) {
@@ -100,12 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
     if (document.querySelector('.main-action-section')) {
-        const timers = document.querySelectorAll('.timer');
-        timers.forEach((t, i) => {
-            const id = t.getAttribute('id');
-
-            timer(`#${id}`, getRandomArbitrary(i + 1, 24), i * 3)
-        })
+        startTimer()
     }
     if (document.querySelector('.drop')) {
         const drops = document.querySelectorAll(".drop");

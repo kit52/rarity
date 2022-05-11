@@ -177,6 +177,10 @@
 
                 .btn {
                     max-width: 172px;
+                    padding-top: 14px;
+                    padding-bottom: 13px;
+                    font-size: 12px;
+                    line-height: 15px;
 
                     &:not(:last-child) {
                         margin-right: 16px;
