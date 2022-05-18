@@ -140,3 +140,19 @@
     }
   }
 }
+
+.accent {
+  background: linear-gradient(269.71deg, #D5F088 5.11%, #7DDFCD 82.45%);
+  height: 28px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+  }
+}

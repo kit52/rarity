@@ -7,9 +7,11 @@
         height: 140px;
         display: flex;
         align-items: center;
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
+
         .title {
             width: 100%;
             max-width: 155px;
@@ -20,23 +22,27 @@
             padding-right: 36px;
             justify-content: center;
             border-right: 1px solid rgba(224, 224, 224, 0.5);
+
             span {
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
             }
+
             .title_big {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 60px;
                 line-height: 66px;
             }
+
             .year {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 37px;
             }
         }
+
         .block {
             width: 100%;
             height: 100%;
@@ -49,6 +55,7 @@
             line-height: 20px;
         }
     }
+
     .road-one {
         background: linear-gradient(267.01deg, #b61944 21.64%, #40b3e5 78.88%);
 
@@ -62,12 +69,14 @@
             max-width: 240px;
             border-right: 1px solid rgba(224, 224, 224, 0.5);
         }
+
         .block-four {
             padding-left: 56px;
             padding-right: 56px;
             max-width: 300px;
         }
     }
+
     .road-two,
     .road-five,
     .road-seven {
@@ -76,6 +85,7 @@
             max-width: 480px;
         }
     }
+
     .road-five,
     .road-seven {
         .block-one {
@@ -83,15 +93,62 @@
                 max-width: 240px;
             }
         }
+
         .block-two {
             span {
                 max-width: 300px;
             }
         }
     }
+
     .road-six {
         span {
             max-width: 550px;
+        }
+    }
+
+    .road-two {
+        .block-one {
+            background: linear-gradient(72.89deg, #30A014 12.74%, #8EFD72 118.13%);
+            max-width: 288px;
+            border-right: 1px solid rgba(224, 224, 224, 0.5);
+
+            padding-left: 17px;
+            padding-top: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            * {
+                color: var(--grey-5);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .wrapper-text {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .bottom {
+                margin-top: 13px;
+                display: flex;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .block-two {
+            max-width: 309px;
+            border-right: 1px solid rgba(224, 224, 224, 0.5);
         }
     }
 }
